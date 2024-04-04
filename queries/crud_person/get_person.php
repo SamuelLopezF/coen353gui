@@ -1,7 +1,8 @@
 <?PHP
-  require "../db.php";  
+  require "../../db.php";  
+  require "../../header.php";
 
-  $query = "SELECT * FROM client WHERE client.sin = ".$_GET['sin_id'].";";
+  $query = "SELECT * FROM relatives WHERE relatives.medicare = ".$_GET['medicare_get_id'].";";
   echo "QUERY = ".$query."</br> </br></br></br>";
 
   if($result = mysqli_query($conn, $query)){

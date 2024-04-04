@@ -1,7 +1,8 @@
 <?PHP
-  require "../db.php";  
-
-$query = "INSERT INTO client VALUES ('"
+  require "../../db.php";  
+  require "../../header.php";
+  
+  $query = "INSERT INTO client VALUES ('"
   .$_POST['medicare']."','"
   .$_POST['first_name']."','"
   .$_POST['last_name']."','"
@@ -11,7 +12,7 @@ $query = "INSERT INTO client VALUES ('"
   .$_POST['role']."','"
   .$_POST['manager_medicare']."','"
   .$_POST['facility_postalcode']."',"
-  ."0);";
+  ."0 );";
 
 
 echo "QUERY = ".$query."</br> </br></br></br>";

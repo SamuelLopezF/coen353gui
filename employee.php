@@ -6,12 +6,12 @@
 <body>
   <h2>CRUD employee <h2>
   <h3>GET</h3>
-  <form action="./queries/get_employee_by_sin.php" method="GET">
+  <form action="./queries/crud_employee/get_employee_by_sin.php" method="GET">
     SIN : <input type="number" name="sin_id" id="sin_id" value="">
     <input type="submit" value="GET"> 
   </form>
   <h3>INSERT</h3>
-  <form action="./queries/insert_new_employee.php" method="POST">
+  <form action="./queries/crud_employee/insert_new_employee.php" method="POST">
       MEDICARE : <input type="number" name="medicare" id="medicare_id" value=""></br>
       FIRST NAME : <input type="text" name="first_name" id="first_name_id" value=""></br>
       LAST NAME : <input type="text" name="last_name" id="last_name_id" value=""></br>
@@ -24,13 +24,13 @@
     <input type="submit" value="INSERT"> 
   </form>
   <h3>UPDATE</h3>
-  <form action="./queries/update_employee.php" method="POST">
-      SIN : <input type="number" name="sin_id" id="sin_id" value="">
+  <form action="./queries/crud_employee/update_employee.php" method="POST">
+      SIN : <input type="number" name="sin_id_update" id="sin_id_update" value="">
       <input type="submit" value="UPDATE"> 
   </form>
   <h3>DELETE</h3>
-  <form action="./queries/delete_employee_by_sin.php" method="POST">
-      SIN : <input type="number" name="sin_id" id="sin_id" value="">
+  <form action="./queries/crud_employee/delete_employee_by_sin.php" method="POST">
+      SIN : <input type="number" name="sin_id_delete" id="sin_id" value="">
       <input type="submit" value="DELETE"> 
   </form>
 
