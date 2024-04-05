@@ -2,7 +2,7 @@
   require "../../header.php";
   require "../../db.php";  
 
-$query = "DELETE FROM facility WHERE sin = ".$_POST['postal_code_facility_delete'].";";
+$query = "DELETE FROM facility WHERE postalcode= '".$_POST['postal_code_facility_delete']."';";
 
 
 echo "QUERY = ".$query."</br> </br></br></br>";
