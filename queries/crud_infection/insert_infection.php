@@ -1,8 +1,15 @@
 <?PHP
-  require "../../header.php";
   require "../../db.php";  
+  require "../../header.php";
+  
+  $query = "INSERT INTO relatives VALUES ('"
+  .$_POST['first_name']."','"
+  .$_POST['last_name']."','"
+  .$_POST['medicare']."','"
+  .$_POST['relatedEmployeeMedicare']."','"
+  .$_POST['relationship']."','"
+  .$_POST['dob']."');";
 
-$query = "DELETE FROM residence WHERE postal_code = '".$_POST['postal_code_residence_delete']."';";
 
 echo "QUERY = ".$query."</br> </br></br></br>";
 

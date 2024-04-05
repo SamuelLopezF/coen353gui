@@ -1,8 +1,9 @@
-<?PHP
+ <?PHP
   require "../../header.php";
   require "../../db.php";  
 
-$query = "DELETE FROM residence WHERE postal_code = '".$_POST['postal_code_residence_delete']."';";
+$query = "DELETE FROM facility WHERE sin = ".$_POST['postal_code_facility_delete'].";";
+
 
 echo "QUERY = ".$query."</br> </br></br></br>";
 

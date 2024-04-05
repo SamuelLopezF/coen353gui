@@ -6,6 +6,7 @@
   header("location : /employee.php");
   header("location : /vaccination.php");
   header("location : /infection.php");
+  header("location : /facility.php");
 ?>
 
 
@@ -15,7 +16,8 @@
   <a href="/person.php">person</a>
   <a href="/employee.php">employee</a>
   <a href="/vaccination.php">vaccination</a>
-  <a href="/infection.php">infection</a></h3>
+  <a href="/infection.php">infection</a>
+  <a href="/facility.php">facility</a></h3>
 </header>
 
 
