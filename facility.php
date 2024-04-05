@@ -23,7 +23,7 @@
     <input type="submit" value="INSERT"> 
   </form>
   <h3>UPDATE</h3>
-  <form action="./queries/crud_facility/update_facility.php" method="POST">
+  <form action="./queries/crud_facility/update_facility1.php" method="POST">
       POSTAL_CODE: <input type="text" name="postal_code_facility_update" id="" value="">
       <input type="submit" value="UPDATE"> 
   </form>

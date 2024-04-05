@@ -21,8 +21,8 @@
     <input type="submit" value="INSERT"> 
   </form>
   <h3>UPDATE</h3>
-  <form action="./queries/crud_person/update_person.php" method="POST">
-      MEDICARE : <input type="number" name="medicare_id_update" id="medicare_id_update" value="">
+  <form action="./queries/crud_person/update_person1.php" method="POST">
+      MEDICARE : <input type="number" name="relatives_medicare_update" id="medicare_id_update" value="">
       <input type="submit" value="UPDATE"> 
   </form>
   <h3>DELETE</h3>

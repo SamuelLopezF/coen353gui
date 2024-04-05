@@ -2,7 +2,7 @@
   require "../../db.php";  
   require "../../header.php";
   
-  $query = "SELECT * FROM facility WHERE postalcode= ".$_POST['postal_code_facility_update'].";";
+  $query = "SELECT * FROM facility WHERE postalcode= '".$_POST['postal_code_facility_update']."';";
   echo "QUERY = ".$query."</br> </br></br></br>";
 try {
  

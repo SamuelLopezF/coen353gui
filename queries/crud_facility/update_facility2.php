@@ -11,7 +11,7 @@ $query = "UPDATE client SET ".
   "',province= '".$_POST['province'].
   "',telephone_number = '".$_POST['telephone_number'].
   "',type = '".$_POST['type'].
-  "',manager_facility_name= '".$_POST['manager_facility_name'].
+  "',manager_facility_name = '".$_POST['manager_facility_name'].
   " WHERE sin = ".$_POST['sin'].";";
 
 
