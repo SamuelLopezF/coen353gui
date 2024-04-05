@@ -6,27 +6,31 @@
   - delete
 
 CRUD : 
-employee(client)
+#employee(client)
 - create ✔️
 - read ✔️
 - update ✔️
 - delete ✔️
-person(relatives) ✔️
+
+#Person(relatives) ✔️
 - create ✔️
 - read ✔️
 - update ✔️
 - delete ✔️
-Facility 
+  
+#Facility 
 - create ✔️
 - read ✔️
 - update 
-- delete 
-Infection
+- delete
+  
+#Infection
 - create ✔️
 - read 
 - update 
-- delete 
-Residence
+- delete
+
+#Residence
 - create ✔️
 - read ✔️
 - update 
