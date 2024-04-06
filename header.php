@@ -15,7 +15,9 @@
 
 <header>
   <h3><a href="/residence.php">residence</a>
-  <a href="/person.php">person</a>
+  <a href="/person.php">relatives</a>
+  <a href="/person.php">relativesVaccination</a>
+  <a href="/person.php">relativesInfection</a>
   <a href="/employee.php">employee</a>
   <a href="/vaccination.php">vaccination</a>
   <a href="/infection.php">infection</a>
