@@ -2,15 +2,16 @@
   require "../../db.php";  
   require "../../header.php";
   
-  $query = "SELECT * FROM facility WHERE postalcode= '".$_POST['postal_code_facility_update']."';";
+  $query = "SELECT * FROM residence WHERE postal_code= '".$_POST['postal_code_residence_update']."';";
   echo "QUERY = ".$query."</br> </br></br></br>";
 try {
- $old_postal = $_POST['postal_code_facility_update'];
+ $old_postalcode = $_POST['postal_code_residence_update'];
  
   $result = mysqli_query($conn, $query);
   echo "<h2> SUCCESS </h2>";
-  echo '<form action="./update_facility2.php" method = "POST" >';
-  echo "<input name=old_postal value =".$old_postal."></input></br>";
+  echo '<form action="./update_residence2.php" method = "POST" >';
+  
+        echo "<input name=old_postalcode readonly value =".$old_postalcode."></input></br>";
   while($row = mysqli_fetch_assoc($result))
     {
     

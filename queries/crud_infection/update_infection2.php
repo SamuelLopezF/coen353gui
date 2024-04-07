@@ -2,14 +2,12 @@
   require "../../db.php";  
   require "../../header.php";
   
-  $query = "INSERT INTO work VALUES ('"
-  .$_POST['medicare_work']."','"
-  .$_POST['facility_postalCode_work']."','"
-  .$_POST['startDate_work']."','"
-  .$_POST['endDate_work']."');";
+  $query = "UPDATE infection SET ".
+   "medicare = '".$_POST['Medicare']."',".
+   "type ='".$_POST['Type']."',".
+   "date ='".$_POST['Date']."'".
+   "WHERE medicare = ".$_POST['medicare_old'].";";
 
-
-  
 echo "QUERY = ".$query."</br> </br></br></br>";
 
 try {
@@ -20,6 +18,4 @@ try {
 }
 
 mysqli_close($conn);
-?>
-
-
+?> 

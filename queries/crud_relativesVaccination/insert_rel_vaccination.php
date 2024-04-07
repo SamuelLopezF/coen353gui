@@ -2,12 +2,12 @@
   require "../../db.php";  
   require "../../header.php";
   
-  $query = "INSERT INTO work VALUES ('"
-  .$_POST['medicare_work']."','"
-  .$_POST['facility_postalCode_work']."','"
-  .$_POST['startDate_work']."','"
-  .$_POST['endDate_work']."');";
-
+  $query = "INSERT INTO relativesVaccination VALUES ('"
+  .$_POST['medicare_rel_vaccination']."','"
+  .$_POST['date_rel_vaccination']."','"
+  .$_POST['provider_rel_vaccination']."','"
+  .$_POST['dose_number_rel_vaccination']."','"
+  .$_POST['postal_code_rel_vaccination']."');";
 
   
 echo "QUERY = ".$query."</br> </br></br></br>";

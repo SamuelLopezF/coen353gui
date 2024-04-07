@@ -6,7 +6,7 @@
   - delete
 
 CRUD : 
-#employee(client)
+#employee(client) ✔️
 - create ✔️
 - read ✔️
 - update ✔️
@@ -21,8 +21,8 @@ CRUD :
 #Facility 
 - create ✔️
 - read ✔️
-- update 
-- delete
+- update ✔️ 
+- delete ✔️
   
 #Infection
 - create ✔️

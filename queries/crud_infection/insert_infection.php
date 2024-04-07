@@ -2,13 +2,10 @@
   require "../../db.php";  
   require "../../header.php";
   
-  $query = "INSERT INTO relatives VALUES ('"
-  .$_POST['first_name']."','"
-  .$_POST['last_name']."','"
-  .$_POST['medicare']."','"
-  .$_POST['relatedEmployeeMedicare']."','"
-  .$_POST['relationship']."','"
-  .$_POST['dob']."');";
+  $query = "INSERT INTO infection VALUES ('"
+  .$_POST['medicare_infection']."','"
+  .$_POST['type_infection']."','"
+  .$_POST['date_infection']."');";
 
 
 echo "QUERY = ".$query."</br> </br></br></br>";
