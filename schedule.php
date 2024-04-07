@@ -11,18 +11,20 @@
   </form>
   <h3>INSERT</h3>
   <form action="./queries/crud_schedule/insert_schedule.php" method="POST">
-      START TIME: <input type="number" name="startTime_schedule" id="" value=""></br>
-      END TIME: <input type="number" name="endTime_schedule" id="" value=""></br>
-      FACILITY POSTAL CODE: <input type="text" name="facility_postalCode_schedule" id="" value=""></br>
-      MEDICARE: <input type="number" name="medicare_schedule" id="" value=""></br>
+      START TIME: <input type="time" name="startTime_schedule_insert" id="" value=""></br>
+      END TIME: <input type="time" name="endTime_schedule_insert" id="" value=""></br>
+      FACILITY POSTAL CODE: <input type="text" name="facility_postalCode_schedule_insert" id="" value=""></br>
+      DATE: <input type="date" name="date_schedule_insert" id="" value=""></br>
+      MEDICARE: <input type="number" name="medicare_schedule_insert" id="" value=""></br>
     <input type="submit" value="INSERT"> 
   </form>
   <h3>UPDATE</h3>
   <form action="./queries/crud_schedule/update_schedule.php" method="POST">
-  START TIME: <input type="number" name="startTime_schedule" id="" value=""></br>
-      END TIME: <input type="number" name="endTime_schedule" id="" value=""></br>
-      FACILITY POSTAL CODE: <input type="text" name="facility_postalCode_schedule" id="" value=""></br>
-      MEDICARE: <input type="number" name="medicare_schedule" id="" value=""></br>
+      START TIME: <input type="time" name="startTime_schedule_update" id="" value=""></br>
+      END TIME: <input type="time" name="endTime_schedule_update" id="" value=""></br>
+      FACILITY POSTAL CODE: <input type="text" name="facility_postalCode_schedule_update" id="" value=""></br>
+      DATE: <input type="date" name="date_schedule_update" id="" value=""></br>
+      MEDICARE: <input type="number" name="medicare_schedule_update" id="" value=""></br>
 <input type="submit" value="UPDATE"> 
   </form>
   <h3>DELETE</h3>
