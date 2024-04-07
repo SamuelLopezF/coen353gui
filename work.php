@@ -19,11 +19,10 @@
     <input type="submit" value="INSERT"> 
   </form>
   <h3>UPDATE</h3>
-  <form action="./queries/crud_schedule/update_schedule.php" method="POST">
-  MEDICARE: <input type="number" name="medicare_work_update" id="" value=""></br>
-  FACILITY POSTAL CODE: <input type="text" name="facility_postalCode_work_update" id="" value=""></br>
-      START DATE: <input type="date" name="startDate_work_update" id="" value=""></br>
-      END DATE: <input type="date" name="endDate_work_update" id="" value=""></br>
+  <form action="./queries/crud_work/update_work1.php" method="POST">
+    MEDICARE: <input type="number" name="medicare_work_update" id="" value=""></br>
+    START DATE: <input type="date" name="startDate_update_work" id="" value=""></br>
+    FACILITY POSTAL CODE: <input type="text" name="facility_postalCode_work_update" id="" value=""></br>
 <input type="submit" value="UPDATE"> 
   </form>
   <h3>DELETE</h3>

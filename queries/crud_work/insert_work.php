@@ -6,7 +6,7 @@
   .$_POST['medicare_work']."','"
   .$_POST['facility_postalCode_work']."','"
   .$_POST['startDate_work']."','"
-  .$_POST['endDate_work']."', DEFAULT);";
+  .$_POST['endDate_work']."');";
 
 
   
