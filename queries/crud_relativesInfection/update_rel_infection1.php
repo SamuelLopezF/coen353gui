@@ -2,13 +2,15 @@
   require "../../db.php";  
   require "../../header.php";
 
-  $query = "SELECT * FROM infection WHERE ".
+  $query = "SELECT * FROM relativesInfection WHERE ".
     "medicare = '".$_POST['medicare_update_infection']."'".
     "AND type = '".$_POST['type_update_infection']."'".
     "AND date = '".$_POST['date_update_infection']."';";
   echo "QUERY = ".$query."</br></br>";
 
   $medicare_old = $_POST['medicare_update_infection'];
+  $type_old = $_POST['type_update_infection'];
+  $date_old = $_POST['date_update_infection'];
 
   if($result = mysqli_query($conn, $query)){
  
@@ -17,11 +19,10 @@
 
     echo '<form action="./update_rel_infection2.php" method = "POST" >';
     echo"</br>";
-    echo"modifying : " . $medicare_old;
-    echo"<table border=1>";
-
-
-        echo "<input name=medicare_old value =".$medicare_old."></input></br>";
+    echo"modifying : ";
+    echo "<input name=medicare_old value =".$medicare_old." readonly ></input></br>";
+    echo "<input name=type_old value =".$type_old." readonly ></input></br>";
+    echo "<input name=date_old value =".$date_old." readonly ></input></br>";
     while($row = mysqli_fetch_assoc($result))
     {
       echo"<tr>";
@@ -32,10 +33,9 @@
       }
       echo"</tr>";
     }
-    echo"</table>";
     echo"</br>";
     echo"<input type='submit' value='UPDATE'>";
-    
+    echo"</form>";
   }
 
   mysqli_close($conn);

@@ -2,11 +2,11 @@
   require "../../header.php";
   require "../../db.php";  
 
-  $query = "DELETE FROM vaccination WHERE"
+  $query = "DELETE FROM relativesVaccination WHERE"
     ." medicare = ".$_POST['medicare_vaccination_delete']
-    .",date = ".$_POST['date_vaccination_delete']
-    .",provider = ".$_POST['provider_vaccination_delete']
-    .",doseNumber = ".$_POST['dose_number_delete']
+    ."AND date = ".$_POST['date_vaccination_delete']
+    ."AND provider = ".$_POST['provider_vaccination_delete']
+    ."AND doseNumber = ".$_POST['dose_number_delete']
     .";";
 
 
