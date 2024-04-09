@@ -1,0 +1,6 @@
+8 . select f.name , f.address , f.postalcode, f.city, f.province, count(*) as "total emp", sum(e.role = "role") as Doctors, sum(e.role = "nurse") as Nurses , from facility as f, client as e WHERE e.facilityPostalCode = f.postalcode group by f.postalcode order by f.province, f.city, f.type, Doctors ascd;
+
+9 . select c.medicare, c.lastname, w.startDate, c.dob , c.telephone, r.addres , r.province, r.postal_code, from client as c , residence as r , work as w , where c.medicare = r.medicare_of_employee AND w.medicare = c.medicare AND r.medicare_of_employee = w.Medicare AND w.endDate = '0000-00-00';
+
+10 .
+

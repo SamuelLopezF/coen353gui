@@ -1,5 +1,6 @@
 <?PHP
   // session_start();
+ // header("location : /schedule_automation.php");
   header("location : /index.php");
   header("location : /residence.php");
   header("location : /relatives.php");
@@ -26,21 +27,10 @@
   <a href="/facility.php">facility</a>
   <a href="/schedule.php">schedule</a>
   <a href="/work.php">work</a>
+  <a href="/schedule_automation.php">schedule_automation</a>
 </h3>
 
 </header>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

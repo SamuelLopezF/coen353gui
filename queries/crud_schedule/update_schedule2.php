@@ -10,7 +10,7 @@
   "' ,employeeMedicare = '".$_POST['employeeMedicare'].
   "' ,date = '".$_POST['date'].
   "' WHERE ( ".
-  " startTime = '".$_POST['time_old'].
+  "  startTime = '".$_POST['time_old'].
   "' AND facilityPostalCode = '".$_POST['postal_old'].
   "' AND employeeMedicare = '".$_POST['medicare_old'].
   "' AND date = '".$_POST['date_old'].
