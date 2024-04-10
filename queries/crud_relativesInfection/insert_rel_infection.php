@@ -1,11 +1,12 @@
 <?PHP
-  require "../../db.php";  
   require "../../header.php";
-  
-  $query = "INSERT INTO relativesInfection VALUES ('"
-  .$_POST['medicare_infection']."','"
-  .$_POST['type_infection']."','"
-  .$_POST['date_infection']."');";
+  require "../../db.php";  
+
+  $query = "DELETE FROM relativesInfection WHERE"
+    ." medicare = '".$_POST['medicare_delete_infection']
+    ."' AND type = '".$_POST['type_delete_infection']
+    ."' AND date = '".$_POST['date_delete_infection']
+    ."';";
 
 
 echo "QUERY = ".$query."</br> </br></br></br>";
